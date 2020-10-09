@@ -1,0 +1,59 @@
+*  {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  width: 650px;
+  text-align: center;
+  margin: auto;
+  padding: 20px 2px;
+}
+
+.item {
+  width: calc(100% / 3 - 10px);
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+/* foto prodotti */
+.pod {
+  background-image: url(../img/pd1.jpg);
+}
+.phone {
+  background-image: url(../img/pd2.jpg);
+}
+.headset {
+  background-image: url(../img/pd3.jpg);
+}
+
+/* sconto */
+.discount {
+  width: 40px;
+  padding: 2px;
+  background: green;
+  position: absolute;
+  right: 0;
+}
+.phone .discount {
+  background: red;
+}
+
+/* cuore */
+.heart {
+  font-size: 20px;
+  position: absolute;
+  bottom: 3%;
+  right: 45%;
+  cursor: pointer;
+  display: none;
+}
+.item:hover > span {
+  color: red;
+  display: inherit;
+}
